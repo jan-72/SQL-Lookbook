@@ -1,8 +1,9 @@
 **Easy | SQL (Basics)**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query all attributes of every Japanese city in the CITY table. The COUNTRYCODE for Japan is JPN.
 
 The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+<img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/a8e82e39-1535-4b60-b836-f752acf715cd" />
+
 
 
