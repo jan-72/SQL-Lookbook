@@ -1,0 +1,10 @@
+with binarytree as
+(select n,p,
+case when p IS NULL then "Root"
+     when n in (select p from bst) then "Inner"
+else "Leaf"
+end as node_type
+from bst)
+
+select n, node_type from binarytree
+order by n
