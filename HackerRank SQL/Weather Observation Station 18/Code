@@ -1,0 +1,5 @@
+select round(abs(a.latns-a.latnl)+ abs(a.longws-a.longwl),4) as Manhattan_Distance from 
+(select min(lat_n) as latns, 
+        max(lat_n) as latnl, 
+        min(long_w) as longws, 
+        max(long_w) as longwl from station) as a 
