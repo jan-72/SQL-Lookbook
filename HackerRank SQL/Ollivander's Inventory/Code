@@ -1,0 +1,6 @@
+select w.id, wp.age, w.coins_needed, w.power from wands as w
+join wands_property as wp on w.code=wp.code
+where wp.is_evil=0 and 
+w.coins_needed= (select min(coins_needed) from wands as w1
+where w1.code=w.code and w1.power=w.power)
+order by w.power desc, wp.age desc
