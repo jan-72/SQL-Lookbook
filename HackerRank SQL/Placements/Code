@@ -1,0 +1,8 @@
+select  s.name from students as s
+join friends as f on s.id = f.id
+join packages as p on p.id=f.friend_id
+where p.salary> 
+(select p1.salary from packages p1
+where p1.id=s.id
+) 
+order by p.salary 
