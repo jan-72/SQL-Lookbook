@@ -1,0 +1,12 @@
+delimiter $$$
+create procedure stars(rown int)
+begin
+declare n int;
+set n=1;
+while n<=rown do
+    select repeat("* ",n);
+    set n=n+1;
+end while;
+end $$$
+
+call stars (20);
