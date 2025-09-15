@@ -1,0 +1,26 @@
+select co.contest_id, 
+       c.hacker_id, 
+       c.name, 
+       sum(ss.ts) as ssts, 
+       sum(ss.tas) as sstas,
+       sum(vs.tv)as vstv, 
+       sum(vs.tuv) as vstuv 
+from colleges as co
+join contests as c on co.contest_id=c.contest_id
+join challenges as ch on co.college_id=ch.college_id
+left join (select challenge_id, 
+                  sum(total_views) as tv, 
+                  sum(total_unique_views) as tuv 
+           from view_stats 
+           group by challenge_id) as vs on ch.challenge_id=vs.challenge_id
+left join (select challenge_id, 
+                  sum(total_submissions) as ts, 
+                  sum(total_accepted_submissions) as tas
+           from submission_stats 
+           group by challenge_id) as ss on ch.challenge_id=ss.challenge_id
+group by co.contest_id, c.hacker_id, c.name
+having sum(ss.ts)+ 
+       sum(ss.tas) +
+       sum(vs.tv)+
+       sum(vs.tuv) >0
+order by co.contest_id 
