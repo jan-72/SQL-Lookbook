@@ -1,0 +1,16 @@
+with hackies as 
+(select h.hacker_id as h_id, h.name as hname, count(c.challenge_id) as cnt from hackers as h
+join challenges as c on h.hacker_id=c.hacker_id
+group by h.hacker_id, h.name
+),
+dup as
+(
+    select cnt from hackies
+    group by cnt
+    having count(*)>1
+)
+
+select hs.h_id, hs.hname, hs.cnt from hackies as hs
+where hs.cnt = (select max(cnt) from hackies) or
+(hs.cnt not in (select cnt from dup) and hs.cnt<(select max(cnt) from hackies))
+order by hs.cnt desc, hs.h_id asc
