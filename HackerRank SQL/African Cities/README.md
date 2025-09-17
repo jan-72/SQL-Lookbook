@@ -1,8 +1,12 @@
-**Easy | SQL (Basics)**
+**Easy | SQL (Basics) | Basic Join**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Input Format
+
+The CITY and COUNTRY tables are described as follows: <img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/51740414-043e-4dd7-968e-0d1a4ad12652" />
 
 
+<img width="352" height="600" alt="image" src="https://github.com/user-attachments/assets/3a12837a-336d-47d0-9baf-cb80bd442554" />
