@@ -1,8 +1,10 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Alternative Queries**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
-
-
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+Write a query to print the pattern P(20).
