@@ -1,8 +1,13 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Basic Join**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
 
+Input Format
 
+The CITY and COUNTRY tables are described as follows:
+
+<img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/a2f273bd-92bd-4267-a839-0c03f98d342b" />
+
+<img width="352" height="600" alt="image" src="https://github.com/user-attachments/assets/6d9914aa-bcde-41db-bd94-1a32c2e62cc6" />
