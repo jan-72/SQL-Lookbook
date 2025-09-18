@@ -1,8 +1,12 @@
 **Easy | SQL (Basics)**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the smallest Northern Latitude (LAT_N) from STATION that is greater than 38.7780 . Round your answer to 4 decimal places.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Input Format
+
+The STATION table is described as follows:
+
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/a7712045-e137-4e1f-9279-190ef604d504" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
