@@ -1,8 +1,8 @@
-**Easy | SQL (Basics)**
+**Easy | SQL  | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Input Format
 
-
+The CITY table is described as follows: 
+<img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/353c4680-34f8-4622-b98c-605ca702f39c" />
