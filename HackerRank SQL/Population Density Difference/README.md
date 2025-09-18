@@ -1,8 +1,9 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the difference between the maximum and minimum populations in CITY.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Input Format
 
+The CITY table is described as follows: 
 
+<img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/592692d0-9b43-4afe-98a5-6c6e915051a9" />
