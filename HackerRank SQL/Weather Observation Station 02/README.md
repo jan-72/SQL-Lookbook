@@ -1,8 +1,21 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the following two values from the STATION table:
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+The sum of all values in LAT_N rounded to a scale of 2 decimal places.
+The sum of all values in LONG_W rounded to a scale of 2 decimal places.
+Input Format
+
+The STATION table is described as follows:
+
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/3833ae0a-cc66-4459-a4c5-6c6fbfbea45e" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+Output Format
+
+Your results must be in the form:
+
+lat lon
+where lat is the sum of all values in LAT_N and lon is the sum of all values in LONG_W. Both results must be rounded to a scale of  decimal places.
