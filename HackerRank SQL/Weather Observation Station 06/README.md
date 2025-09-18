@@ -1,8 +1,12 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Basic Select**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Input Format
+
+The STATION table is described as follows:
+
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/c0d0fece-5b0b-4bad-bf5a-a7cc94924f40" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
