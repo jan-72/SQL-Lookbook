@@ -1,8 +1,11 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Basic Select**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+The STATION table is described as follows:
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/6b935114-96cb-4f71-9d8d-ba7d522b3449" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+For example, if there are three records in the table with CITY values 'New York', 'New York', 'Bengalaru', there are 2 different city names: 'New York' and 'Bengalaru'. The query returns 1, because (total number of records - total unique city names = 3 - 2 = 1 .
