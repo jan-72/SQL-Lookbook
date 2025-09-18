@@ -1,8 +1,25 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Basic Select**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+The STATION table is described as follows:
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/2f84d514-58a7-4dbe-800b-94720843e12c" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+Sample Input
+
+For example, CITY has four entries: DEF, ABC, PQRS and WXY.
+
+Sample Output
+
+ABC 3 <br/>
+PQRS 4 <br/>
+
+Explanation
+
+When ordered alphabetically, the CITY names are listed as ABC, DEF, PQRS, and WXY, with lengths 3,3,4 and 3. The longest name is PQRS, but there are 3 options for shortest named city. Choose ABC, because it comes first alphabetically.
+
+Note
+You can write two separate queries to get the desired output. It need not be a single query.
