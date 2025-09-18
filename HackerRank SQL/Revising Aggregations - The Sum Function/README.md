@@ -1,8 +1,9 @@
-**Easy | SQL (Basics)**
+**Easy | SQL | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Query the total population of all cities in CITY where District is California.
+
+Input Format
 
 The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
 
-
+<img width="365" height="300" alt="image" src="https://github.com/user-attachments/assets/6135b63f-cf69-4747-89b5-81d659818195" />
