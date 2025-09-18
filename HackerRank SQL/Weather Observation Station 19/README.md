@@ -1,8 +1,14 @@
-**Easy | SQL (Basics)**
+**Medium | SQL | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+Consider P1(a,c) and P2(b,d) to be two points on a 2D plane where (a,b) are the respective minimum and maximum values of Northern Latitude (LAT_N) and (c,d) are the respective minimum and maximum values of Western Longitude (LONG_W) in STATION.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Query the Euclidean Distance between points P1 and P2 and format your answer to display  decimal digits.
+
+Input Format
+
+The STATION table is described as follows:
+
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/b8f2c133-507a-4648-bb0e-f80df3ec8c91" />
 
 
+where LAT_N is the northern latitude and LONG_W is the western longitude.
