@@ -1,0 +1,11 @@
+select max(salary* months) as mte, count(*) from employee
+group by salary* months
+order by mte desc
+limit 1
+
+--OR--
+
+select max(salary* months) as mte, count(*) from employee
+group by 1
+order by mte desc
+limit 1
