@@ -1,0 +1,13 @@
+with m1 as 
+(
+    select lat_n, 
+    row_number() over (order by lat_n) as clatn,
+    count(*) over () as total from station
+)
+
+select round(lat_n,4) from m1 
+where clatn = (
+    case when total%2=0 then total/2
+    else (total+1)/2
+    end
+)
