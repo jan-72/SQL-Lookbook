@@ -1,8 +1,11 @@
-**Easy | SQL (Basics)**
+**Medium | SQL | Aggregation**
 
-Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+A median is defined as a number separating the higher half of a data set from the lower half. Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 4 decimal places.
 
-The CITY table is described as follows:
-<img width="528" height="397" alt="image" src="https://github.com/user-attachments/assets/c4aa2b5b-4f85-4cf8-9273-066fde05853b" />
+Input Format
 
+The STATION table is described as follows:
 
+<img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/e5b7a558-08b6-4242-8214-232648368f5a" />
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
