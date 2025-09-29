@@ -2,4 +2,4 @@
 
 Link: https://adriann.github.io/programming_problems.html
 
-1. Write a program that prints ‘Hello World’ to the screen
+7. Write a program that prints a multiplication table for numbers up to 12.
