@@ -1,1 +1,26 @@
+delimiter $$$
+create procedure primes (n int)
+begin
+declare i int;
+declare j int;
+declare p varchar(10);
+declare primen longtext;
+set i=3;
+set primen="2";
+outerloop: while i<=n do
+    set p="prime";
+    set j=2;
+    innerloop: while j<=floor(i/2) do
+        if i%j=0 then set p="notprime";
+        leave innerloop;
+        end if;
+        set j=j+1;
+    end while innerloop;
+    if p="prime" then set primen=concat(primen , "&" , i);
+    end if;
+    set i=i+1;
+    end while outerloop;
+select primen;
+end $$$
 
+call primes(10000);
