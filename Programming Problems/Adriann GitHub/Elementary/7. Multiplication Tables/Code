@@ -1,0 +1,18 @@
+delimiter $$$
+create procedure tables (n int)
+begin
+    declare i int;
+    declare a int;
+    set i =1;
+    set a=1;
+    outerloop: while a<=n do
+        innerloop: while i<=12 do
+            select concat(a," * ", i, " = ", i*a) as a;
+            set i=i+1;
+        end while innerloop;
+        set i=1;
+        set a=a+1;
+    end while outerloop;
+end $$$ 
+
+call tables (3);
