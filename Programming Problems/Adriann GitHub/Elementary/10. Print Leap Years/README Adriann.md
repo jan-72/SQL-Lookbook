@@ -2,4 +2,4 @@
 
 Link: https://adriann.github.io/programming_problems.html
 
-7. Write a program that prints a multiplication table for numbers up to 12.
+10. Write a program that prints the next 20 leap years.
