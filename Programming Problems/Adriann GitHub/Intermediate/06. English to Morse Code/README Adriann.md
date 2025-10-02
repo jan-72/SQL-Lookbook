@@ -1,5 +1,5 @@
-**Easy | SQL (Basics)**
+**Intermediate | SQL**
 
 Link: https://adriann.github.io/programming_problems.html
 
-7. Write a program that prints a multiplication table for numbers up to 12.
+6. Write a program that automatically converts English text to Morse code and vice versa.
