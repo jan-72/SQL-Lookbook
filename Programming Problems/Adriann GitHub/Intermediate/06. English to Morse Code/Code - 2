@@ -1,0 +1,33 @@
+delimiter $$$
+create procedure morsecode(txt varchar(20))
+begin
+declare morsetxt varchar(100);
+declare helper varchar(10);
+declare ia int;
+set ia=1;
+set morsetxt="";
+drop table if exists morseconverter;
+create table morseconverter 
+(
+    alphabet varchar(10), morsecode varchar(10) 
+);
+insert into morseconverter 
+    values ("a", "*-"),
+           ("b", "-***"),
+           ("c", "-*-*"),
+           ("d", "-**"),
+           ("e", "*"),
+           ("f", "**-*"),
+           ("g", "--*"),
+           ("h", "****"),
+           ("i", "**");  
+while ia<=length(txt) do
+    set helper=left(lower(txt),1);
+    set txt=right(lower(txt),length(txt)-1);
+    select morsecode into @mc from morseconverter where alphabet=helper;
+    set morsetxt = concat(morsetxt, @mc,"/");
+end while;
+select morsetxt;
+end $$$
+
+call morsecode("abcdefh");
